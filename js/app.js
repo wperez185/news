@@ -12,26 +12,27 @@ $(document).ready(function(){
 function getApi(){
   $.getJSON(state.url,function(data){
     // console.log(data);
-    // $(".latest").append(data.articles[0].urlToImage);
-
     data.articles.forEach(function(ele){
       var article = ele;
       var url = article.url;
       var urlImg = article.urlToImage;
       var title = article.title;
-      var image = "<a href='" + url + "' target='_blank'>" + "<section class='top-stories'>" + "<img src=" + urlImg + ">" + "<p class='title'>" + title + "</p>" + "</section>" + "</a>";
+      var image = "<section class='top-stories'>" + "<a href='" + url + "' target='_blank'>" +  "<img src=" + urlImg + ">" + "<p class='title'>" + title + "</p>" + "</a>" + "</section>";
       $(".latest").append(image);
-      console.log(url);
+      // console.log(url);
         // URL for our pictures
       // article.urlToImage
-
     })
   });
 
   $.getJSON(state.url2,function(data){
     // console.log(data);
     data.articles.forEach(function(ele){
-      // console.log(ele);
+    var article2 = ele;
+    var title = article2.title;
+    var url = article2.url;
+    var urlLink = "<a href='" + url + "' target='_blank'>" +  "<p class='title'>" + title + "</p>";;
+    $(".headlines").append(urlLink);
     })
   });
 }
