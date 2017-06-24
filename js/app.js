@@ -32,7 +32,7 @@ $(document).ready(function() {
     var trendingNow = "https://newsapi.org/v1/articles?source=newsweek&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
     $.getJSON(trendingNow, function(data) {
       data.articles.forEach(function(ele){
-        var trendingUl = "<ol class='trending-articles'>" + "<li>" + "<a href=' " + ele.url + "' target='_blank'>" + ele.title + "</li>" + "</ol>";
+        var trendingUl = "<section class='trending-articles'>" +  "<a href=' " + ele.url + "' target='_blank'>" + ele.title  + "</section>";
         // console.log(ele.description);
         $(".trending-now").append(trendingUl);
       })
@@ -61,6 +61,7 @@ $(document).ready(function() {
         data.articles.forEach(function(ele) {
           var image = "<a href='" + ele.url + "' target='_blank'>" + "<img src='" + ele.urlToImage + "'>";
           var urlLink = "<p class='title'>" + "<a href=' " + ele.url + "' target='_blank'>" + image + ele.title + "<hr />" + "</a>" + "</p>";
+          $(".story-img",".story-2img",".story-3img",".story-4img",".trending-articles").addClass("hide");
           $(".headlines").append(urlLink);
           $(".to-the-top").removeClass("hide");
           // $(".main").addClass("hide");
