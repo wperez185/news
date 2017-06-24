@@ -1,24 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Sports Feed</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>News Feed</title>
+    <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Muli" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
 </head>
+
 <body>
-  <main>
-    <h1 class="main-title"> Latest News</h1>
-    <section class="latest">
+    <main>
+      <nav>
+
+      </nav>
+        <h1 class="main-title">News <br> Global News</h1>
+    <section class="categories">
+            <!-- <p class="sub-text"> Headlines </p>
+            <hr>
+            <section>
+                <h3 class="text">Browse from our many categories for a story that interest you. Enjoy your articles.</h3>
+            </section> -->
+
+            <section class="dropdown">
+                <!-- <button class="browse-button">
+                    <span>Browse</span>
+                </button> -->
+                 <section class="dropdown-content">
+                    <select class="dropdown-menu" name="">
+                      <option value="">Please select one</option>
+                      <option value="business">Business</option>
+                      <option value="entertainment">Entertainment</option>
+                      <option value="gaming">Gaming</option>
+                      <option value="general">General</option>
+                      <option value="music">Music</option>
+                      <option value="politics">Politics</option>
+                      <option value="science-and-nature">Science-and-Nature</option>
+                      <option value="sport">Sports</option>
+                      <option value="technology">Technology</option>
+                    </select>
+                    <select class="dropdown-category hide" name="">
+                   </select>
+                </section>
+            </section>
     </section>
-    <section class="headlines">
-        <h3 class="text"> Headlines </h3>
-        <hr>
+        <section class="latest">
+   </section>
+   <section class="weather">
+
+
+   </section>
+   <section class="trending-now">
+
+     
+   </section>
+   <!-- <section class="main">
+
+
+   </section> -->
+        <section class="headlines hide">
+            <h3 class="text"> Headlines </h3>
+            <!-- <hr> -->
+        </section>
+        <section class="to-the-top hide">
+      <a class="back-to-top" href="#" style="display: inline;">
+        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
     </section>
-  </main>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-<script src="js/app.js" charset="utf-8"></script>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+      <script src="https://use.fontawesome.com/1a59793b51.js"></script>
 </body>
+
 </html>

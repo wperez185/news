@@ -1,41 +1,72 @@
-$(document).ready(function(){
-  var state = {
-    // If I need a different API to choose from I can use these
-    // url: "https://newsapi.org/v1/articles?source=espn&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d",
-    // url2: "https://newsapi.org/v1/articles?source=talksport&sortBy=latest&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d"
+$(document).ready(function() {
+  // var weather = "http://api.apixu.com/v1/forecast.json?key=90da794fb2ae411bb7914107172106&q=07112&days=7";
+  // $(".weather").append(weather);
+  var breakingNews = "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
+  $.getJSON(breakingNews, function(data) {
+    var story1ImgUrl = data.articles[0].url;
+    var story1Img = "<section class='story-img'>" + "<section class='story-title'>" + data.articles[0].title + "</section>" + "<a href='" + data.articles[0].url + "' target='_blank'>" + "<img src='" + data.articles[0].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[0].description + "</section>" + "</section>";
+    // Second story
+    var story2ImgUrl = data.articles[1].url;
+    var story2Img = "<section class='story-img2'>" + "<a href='" + data.articles[4].url + "' target='_blank'>" + "<img src='" + data.articles[4].urlToImage + "' class='story2'></a>" + "<section class='description2'>" + data.articles[4].description + "</section>" + "</section>";
+    // Third story
+    var story3ImgUrl = data.articles[2].url;
+    var story3Img = "<section class='story-img3'>" + "<a href='" + data.articles[6].url + "' target='_blank'>" + "<img src='" + data.articles[6].urlToImage + "' class='story3'></a>" + "<section class='description3'>" + data.articles[6].description + "</section>" + "</section>";
+    // Fourth story
+    var story4ImgUrl = data.articles[3].url;
+    var story4Img = "<section class='story-img4'>" + "<a href='" + data.articles[3].url + "' target='_blank'>" + "<img src='" + data.articles[3].urlToImage + "' class='story4'></a>" + "<section class='description4'>" + data.articles[3].description + "</section>" + "</section>";
+    $(".latest").append(story1Img);
 
-    url:  "https://newsapi.org/v1/articles?source=talksport&sortBy=latest&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d",
-    url2: "https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d"
-};
+    $(".latest").append(story2Img);
 
+    $(".latest").append(story3Img);
 
-function getApi(){
-  $.getJSON(state.url,function(data){
-    // console.log(data);
-    data.articles.forEach(function(ele){
-      var article = ele;
-      var url = article.url;
-      var urlImg = article.urlToImage;
-      var title = article.title;
-      var image = "<section class='top-stories'>" + "<a href='" + url + "' target='_blank'>" +  "<img src=" + urlImg + ">" + "<p class='title'>" + title + "</p>" + "</a>" + "</section>";
-      $(".latest").append(image);
-      // console.log(url);
-        // URL for our pictures
-      // article.urlToImage
-    })
+    $(".latest").append(story4Img);
+    data.articles.forEach(function(ele) {
+      // Top section of page for breaking news
+    var breakingNewsLink = "<section class='breaking-news animated slideOutLef infinite'>BREAKING NEWS: " +  ele.title + "</section>";
+    $("nav").append(breakingNewsLink);
   });
-
-  $.getJSON(state.url2,function(data){
-    // console.log(data);
-    data.articles.forEach(function(ele){
-    var article2 = ele;
-    var title = article2.title;
-    var url = article2.url;
-    var urlLink = "<a href='" + url + "' target='_blank'>" +  "<p class='title'>" + title + "</p>";;
-    $(".headlines").append(urlLink);
-    })
   });
-}
+  $(".breaking-news").addClass("animated slideOutLeft");
 
-getApi();
+    var trendingNow = "https://newsapi.org/v1/articles?source=newsweek&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
+    $.getJSON(trendingNow, function(data) {
+      data.articles.forEach(function(ele){
+        var trendingUl = "<ol class='trending-articles'>" + "<li>" + "<a href=' " + ele.url + "' target='_blank'>" + ele.title + "</li>" + "</ol>";
+        // console.log(ele.description);
+        $(".trending-now").append(trendingUl);
+      })
+
+    });
+
+  $(".headlines", ".to-the-top", ".dropdown-category").addClass("hide");
+  $(".dropdown-menu").change(function() {
+    var category = $(this).val();
+    var url = "https://newsapi.org/v1/sources?category=" + category;
+    $.getJSON(url, function(data) {
+      var html = "<option value=''>Please select one</option>";
+      data.sources.forEach(function(element) {
+        html += "<option value='" + element.id + "'>" + element.name + "</option>";
+      });
+      $(".dropdown-category").removeClass("hide");
+      $(".dropdown-category").html(html);
+    });
+      // second dropdown menu
+    $(".dropdown-category").change(function() {
+      $(".headlines").removeClass("hide");
+      var source = $(this).val();
+      var url = "https://newsapi.org/v1/articles?source=" + source + "&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
+      $(".headlines").html("");
+      $.getJSON(url, function(data) {
+        data.articles.forEach(function(ele) {
+          var image = "<a href='" + ele.url + "' target='_blank'>" + "<img src='" + ele.urlToImage + "'>";
+          var urlLink = "<p class='title'>" + "<a href=' " + ele.url + "' target='_blank'>" + image + ele.title + "<hr />" + "</a>" + "</p>";
+          $(".headlines").append(urlLink);
+          $(".to-the-top").removeClass("hide");
+          // $(".main").addClass("hide");
+        });
+      });
+    });
+  });
 });
+// });
