@@ -4,16 +4,16 @@ $(document).ready(function() {
   var breakingNews = "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
   $.getJSON(breakingNews, function(data) {
     var story1ImgUrl = data.articles[0].url;
-    var story1Img = "<section class='story-img'>" + "<section class='story-title'>" + data.articles[0].title + "</section>" + "<a href='" + data.articles[0].url + "' target='_blank'>" + "<img src='" + data.articles[0].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[0].description + "</section>" + "</section>";
+    var story1Img = "<section class='story-img col-md-6'>" + "<section class='story-title'>" + data.articles[0].title + "</section>" + "<a href='" + data.articles[0].url + "' target='_blank'>" + "<img src='" + data.articles[0].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[0].description + "</section>" + "</section>" + "<hr />";
     // Second story
-    var story2ImgUrl = data.articles[1].url;
-    var story2Img = "<section class='story-img2'>" + "<a href='" + data.articles[4].url + "' target='_blank'>" + "<img src='" + data.articles[4].urlToImage + "' class='story2'></a>" + "<section class='description2'>" + data.articles[4].description + "</section>" + "</section>";
+    var story2ImgUrl = data.articles[4].url;
+    var story2Img = "<section class='story-img2 col-md-6'>" + "<section class='story-title'>" + data.articles[4].title + "<a href='" + data.articles[4].url + "' target='_blank'>" + "<img src='" + data.articles[4].urlToImage + "' class='story2'></a>" + "</section>" + "<section class='description2'>" + data.articles[4].description + "</section>" + "</section>" + "<hr />";
     // Third story
-    var story3ImgUrl = data.articles[2].url;
-    var story3Img = "<section class='story-img3'>" + "<a href='" + data.articles[6].url + "' target='_blank'>" + "<img src='" + data.articles[6].urlToImage + "' class='story3'></a>" + "<section class='description3'>" + data.articles[6].description + "</section>" + "</section>";
+    var story3ImgUrl = data.articles[6].url;
+    var story3Img = "<section class='story-img3 col-md-6'>" + "<section class='story-title'>" + data.articles[6].title + "<a href='" + data.articles[6].url + "' target='_blank'>" + "<img src='" + data.articles[6].urlToImage + "' class='story3'></a>" + "</section>" + "<section class='description3'>" + data.articles[6].description + "</section>" + "</section>" + "<hr />";
     // Fourth story
     var story4ImgUrl = data.articles[3].url;
-    var story4Img = "<section class='story-img4'>" + "<a href='" + data.articles[3].url + "' target='_blank'>" + "<img src='" + data.articles[3].urlToImage + "' class='story4'></a>" + "<section class='description4'>" + data.articles[3].description + "</section>" + "</section>";
+    var story4Img = "<section class='story-img4 col-md-6'>" + "<section class='story-title'>" + data.articles[3].title +"<a href='" + data.articles[3].url + "' target='_blank'>" + "<img src='" + data.articles[3].urlToImage + "' class='story4'></a>" + "</section>" + "<section class='description4'>" + data.articles[3].description + "</section>" + "</section>" + "<hr />";
     $(".latest").append(story1Img);
 
     $(".latest").append(story2Img);
@@ -32,7 +32,7 @@ $(document).ready(function() {
     var trendingNow = "https://newsapi.org/v1/articles?source=newsweek&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
     $.getJSON(trendingNow, function(data) {
       data.articles.forEach(function(ele){
-        var trendingUl = "<section class='trending-articles'>" +  "<a href=' " + ele.url + "' target='_blank'>" + ele.title  + "</section>";
+        var trendingUl = "<section class='trending-articles'>" +  "<a href=' " + ele.url + "' target='_blank'>" + ele.title  + "<hr>" + "</section>";
         // console.log(ele.description);
         $(".trending-now").append(trendingUl);
       })
@@ -59,12 +59,17 @@ $(document).ready(function() {
       $(".headlines").html("");
       $.getJSON(url, function(data) {
         data.articles.forEach(function(ele) {
-          var image = "<a href='" + ele.url + "' target='_blank'>" + "<img src='" + ele.urlToImage + "'>";
-          var urlLink = "<p class='title'>" + "<a href=' " + ele.url + "' target='_blank'>" + image + ele.title + "<hr />" + "</a>" + "</p>";
-          $(".story-img",".story-2img",".story-3img",".story-4img",".trending-articles").addClass("hide");
+          var urlLink = "<section class='headlines-stories'>" + "<a href=' " + ele.url + "' target='_blank'>" + "<img src='" + ele.urlToImage + "'>" + "<p class='headlines-title' >" + ele.title + "</p>" + "<hr />" + "</a>" + "</section>";
+          $(".latest").addClass("hide");
+          $(".trending-now").addClass("hide");
+          $(".categories3").addClass("hide");
           $(".headlines").append(urlLink);
+          $(".categories").removeClass("categories");
+          $(".categories2").addClass("categories2");
+          $(".categories3").removeClass("hide");
+          $(".categories3").addClass("categories3");
+          $(".categories2").addClass("hide");
           $(".to-the-top").removeClass("hide");
-          // $(".main").addClass("hide");
         });
       });
     });

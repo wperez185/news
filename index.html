@@ -1,66 +1,95 @@
+</html>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>News Feed</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>News Global News</title>
+    <!-- Bootstrap  below-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Karla|Muli|Mogra" rel="stylesheet">
+
 
     <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
 </head>
 
 <body>
     <main>
-      <nav>
+      <nav class="feed">
 
       </nav>
       <section class="social-media">
-        <h1 class="main-title">News <br> Global News</h1>
+        <p class="main-title"><span>News</span> <br> Global News</p>
         <ul class="social">
+          <li><a href="index.html">Home</a></li>
           <li><a href="https://www.facebook.com" target="blank">Facebook</a></li>
           <li><a href="https://www.twitter.com"target="blank">Twitter</a></li>
         </ul>
         </section>
-    <section class="categories">
-      <h3 class="text">Search by Categories</h3>
-            <!-- <p class="sub-text"> Headlines </p>
-            <hr>
-            <section>
-                <h3 class="text">Browse from our many categories for a story that interest you. Enjoy your articles.</h3>
-            </section> -->
-
-            <section class="dropdown">
-                <!-- <button class="browse-button">
-                    <span>Browse</span>
-                </button> -->
-                 <section class="dropdown-content">
-                    <select class="dropdown-menu" name="">
-                      <option value="">Please select one</option>
-                      <option value="business">Business</option>
-                      <option value="entertainment">Entertainment</option>
-                      <option value="gaming">Gaming</option>
-                      <option value="general">General</option>
-                      <option value="music">Music</option>
-                      <option value="politics">Politics</option>
-                      <option value="science-and-nature">Science-and-Nature</option>
-                      <option value="sport">Sports</option>
-                      <option value="technology">Technology</option>
-                    </select>
-                    <select class="dropdown-category hide" name="">
-                   </select>
-                </section>
-            </section>
-    </section>
-        <section class="latest">
-   </section>
-   <section class="weather">
 
 
-   </section>
-   <section class="trending-now">
+<section class="categories3 hide">
+  <h3 class="text">Search by Categories</h3>
+  <section class="dropdown">
+       <section class="dropdown-content">
+          <select class="dropdown-menu2" name="">
+            <option value="">Please select one</option>
+            <option value="business">Business</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="gaming">Gaming</option>
+            <option value="general">General</option>
+            <option value="music">Music</option>
+            <option value="politics">Politics</option>
+            <option value="science-and-nature">Science-and-Nature</option>
+            <option value="sport">Sports</option>
+            <option value="technology">Technology</option>
+          </select>
+          <select class="dropdown-category2 hide" name="">
+         </select>
+      </section>
+  </section>
+</section>
+        <section class="categories2">
+          <section class="categories">
+            <h3 class="text">Search by Categories</h3>
+                  <section class="dropdown">
+                       <section class="dropdown-content">
+                          <select class="dropdown-menu" name="">
+                            <option value="">Please select one</option>
+                            <option value="business">Business</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="general">General</option>
+                            <option value="music">Music</option>
+                            <option value="politics">Politics</option>
+                            <option value="science-and-nature">Science-and-Nature</option>
+                            <option value="sport">Sports</option>
+                            <option value="technology">Technology</option>
+                          </select>
+                          <select class="dropdown-category hide" name="">
+                         </select>
+                      </section>
+                  </section>
+          </section>
+        </section>
+
+
+        <section class="row latest">
+
+        </section>
+   <!-- <section class="weather">
+
+
+   </section> -->
+   <section class="col-md-6 trending-now">
             <h3 class="trending-header">Trending Now</h3>
 
    </section>
@@ -80,6 +109,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="js/app.js" charset="utf-8"></script>
       <script src="https://use.fontawesome.com/1a59793b51.js"></script>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 </body>
 
 </html>
