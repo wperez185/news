@@ -76,7 +76,9 @@ span {
     padding: 8px 25px;
     font-size: 0.8rem;
 }
-
+main {
+    overflow-x: hidden;
+}
 /*.title {
   font-weight: bold;
   margin-left: auto;
@@ -98,7 +100,6 @@ span {
   text-align: center;
   padding: 22px 10px 5px 12px;
 }
-
 img.img-stories {
   border: 2px solid #fff;
 }*/
@@ -109,7 +110,7 @@ img.img-stories {
   margin-bottom: 50px;
 }*/
 .categories2 {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 .headlines-stories {
@@ -306,15 +307,25 @@ img.img-stories {
 }
 
 .dropdown-menu2 {
-    display: block;
-    width: 50%;
-    margin-left: 185px;
-    margin-top: 30px;
-    border: 2px solid grey;
-    height: 37px;
-    padding-left: 4px;
-    padding-top: 7px;
-}
+        display: block;
+        width: 25%;
+        margin-left: 200px;
+        margin-top: 30px;
+        border: 2px solid grey;
+        height: 37px;
+        padding-left: 4px;
+        padding-top: 7px;
+    }
+    .dropdown-category2 {
+        display: block;
+        width: 25%;
+        margin-left: 350px;
+        margin-top: -37px;
+        border: 2px solid grey;
+        height: 37px;
+        padding-left: 4px;
+        padding-top: 7px;
+    }
 
 .trending-now {
     display: none;
@@ -338,12 +349,12 @@ ul.social {
 
 
 /************************************************************************************************************************
-
                                         Media Queries - Tablets
-
 ************************************************************************************************************************/
 @media (min-width: 481px) and (max-width: 767px)  {
-
+    main {
+        overflow-x: hidden;
+    }
     body {
         background: #fff;
         margin: 0;
@@ -475,15 +486,16 @@ ul.social {
 }
 
 /************************************************************************************************************************
-
                                         Media Queries - Desktop
-
 ************************************************************************************************************************/
 /*@media all and (max-width:1330px)and (min-width:900px) {*/
 @media (min-width: 1281px) {
 
     /*//CSS*/
     /********************************** Nav ********************************************************************************/
+    main {
+        overflow-x: hidden;
+    }
     nav {
         width: 100%;
         background: #888383;
@@ -538,9 +550,19 @@ ul.social {
     }
     .dropdown-menu2 {
         display: block;
-        width: 50%;
-        margin-left: 550px;
-        margin-top: 30px;
+        width: 25%;
+        margin-left: 535px;
+        margin-top: 8px;
+        border: 2px solid grey;
+        height: 37px;
+        padding-left: 4px;
+        padding-top: 7px;
+    }
+    .dropdown-category2 {
+        display: block;
+        width: 25%;
+        margin-left: 750px;
+        margin-top: -37px;
         border: 2px solid grey;
         height: 37px;
         padding-left: 4px;
@@ -652,6 +674,9 @@ ul.social {
 
 @media (min-width:768px)and (max-width: 1024px)  {
     /********************************** Nav ********************************************************************************/
+    main {
+        overflow-x: hidden;
+    }
     ul.social {
         display: block;
     }
@@ -728,9 +753,19 @@ ul.social {
     }
     .dropdown-menu2 {
         display: block;
-        width: 50%;
+        width: 25%;
         margin-left: 350px;
         margin-top: 30px;
+        border: 2px solid grey;
+        height: 37px;
+        padding-left: 4px;
+        padding-top: 7px;
+    }
+    .dropdown-category2 {
+        display: block;
+        width: 25%;
+        margin-left: 550px;
+        margin-top: -37px;
         border: 2px solid grey;
         height: 37px;
         padding-left: 4px;
@@ -820,6 +855,9 @@ ul.social {
 
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) {
     /********************************** Nav ********************************************************************************/
+    main {
+        overflow-x: hidden;
+    }
     ul.social {
         display: block;
     }
@@ -883,7 +921,7 @@ ul.social {
         margin: 0;
         color: #000;
         position: absolute;
-        top: 135px;
+        top: 160px;
         left: 150px;
     }
 
@@ -941,9 +979,19 @@ ul.social {
     }
     .dropdown-menu2 {
         display: block;
-        width: 50%;
+        width: 25%;
         margin-left: 350px;
         margin-top: 30px;
+        border: 2px solid grey;
+        height: 37px;
+        padding-left: 4px;
+        padding-top: 7px;
+    }
+    .dropdown-category2 {
+        display: block;
+        width: 25%;
+        margin-left: 550px;
+        margin-top: -37px;
         border: 2px solid grey;
         height: 37px;
         padding-left: 4px;

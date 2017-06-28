@@ -21,11 +21,13 @@ $(document).ready(function () {
         $(".latest").append(story3Img);
 
         $(".latest").append(story4Img);
+        var breakingNewsLink = "";
         data.articles.forEach(function (ele) {
             // Top section of page for breaking news
-            var breakingNewsLink = "<section class='breaking-news animated slideOutLef infinite'>BREAKING NEWS: " + ele.title + "</section>";
-            $("nav").append(breakingNewsLink);
+            breakingNewsLink += "<section class='breaking-news animated slideOutLef infinite' style='width:100%'><marquee>BREAKING NEWS: " + ele.title + "</marquee></section>";
+
         });
+        $("nav").append(breakingNewsLink);
     });
     $(".breaking-news").addClass("animated slideOutLeft");
 
@@ -53,6 +55,41 @@ $(document).ready(function () {
         });
         // second dropdown menu
         $(".dropdown-category").change(function () {
+            $(".headlines").removeClass("hide");
+            var source = $(this).val();
+            var url = "https://newsapi.org/v1/articles?source=" + source + "&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
+            $(".headlines").html("");
+            $.getJSON(url, function (data) {
+                data.articles.forEach(function (ele) {
+                    var urlLink = "<section class='headlines-stories'>" + "<a href=' " + ele.url + "' target='_blank'>" + "<img src='" + ele.urlToImage + "'>" + "<p class='headlines-title' >" + ele.title + "</p>" + "<hr />" + "</a>" + "</section>";
+                    $(".latest").addClass("hide");
+                    $(".trending-now").addClass("hide");
+                    $(".categories3").addClass("hide");
+                    $(".headlines").append(urlLink);
+                    $(".categories").removeClass("categories");
+                    $(".categories2").addClass("categories2");
+                    $(".categories3").removeClass("hide");
+                    $(".categories3").addClass("categories3");
+                    $(".categories2").addClass("hide");
+                    $(".to-the-top").removeClass("hide");
+                });
+            });
+        });
+    });
+
+    $(".dropdown-menu2").change(function () {
+        var category = $(this).val();
+        var url = "https://newsapi.org/v1/sources?category=" + category;
+        $.getJSON(url, function (data) {
+            var html = "<option value=''>Please select one</option>";
+            data.sources.forEach(function (element) {
+                html += "<option value='" + element.id + "'>" + element.name + "</option>";
+            });
+            $(".dropdown-category2").removeClass("hide");
+            $(".dropdown-category2").html(html);
+        });
+        // second dropdown menu
+        $(".dropdown-category2").change(function () {
             $(".headlines").removeClass("hide");
             var source = $(this).val();
             var url = "https://newsapi.org/v1/articles?source=" + source + "&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
