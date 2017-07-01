@@ -71,6 +71,7 @@ $(document).ready(function () {
                     $(".categories3").removeClass("hide");
                     $(".categories3").addClass("categories3");
                     $(".categories2").addClass("hide");
+                    $(".text").addClass("hide");
                     $(".to-the-top").removeClass("hide");
                 });
             });
