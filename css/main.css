@@ -57,14 +57,14 @@ nav {
   display: -webkit-inline-box;
   contain: content;
   height: 26px;
-  color: blue;
+  color: #fff;
   overflow: hidden;
   font-size: 1rem;
   padding-left: 10px
 }
 
 select {
-  font-family: "Mogra", cursive;
+  font-family: sans-serif;
   font-size: 15px;
 }
 
@@ -176,9 +176,8 @@ img.img-stories {
   left: 185px;
   border: 2px solid grey;
   height: 37px;
-  width: 127px;
+  width: 155px;
   padding-left: 4px;
-  padding-top: 5px;
   margin-top: 4px;
 }
 
@@ -349,18 +348,16 @@ img.img-stories {
   border: 2px solid grey;
   height: 37px;
   padding-left: 4px;
-  padding-top: 7px;
 }
 
 .dropdown-category2 {
   position: absolute;
   top: 42px;
-  left: 185px;
-  width: 64%;
+  left: 195px;
+  width: 86%;
   border: 2px solid grey;
   height: 37px;
   padding-left: 4px;
-  padding-top: 7px;
 }
 
 .trending-now {
@@ -382,6 +379,7 @@ ul.social {
 }
 
 .home {
+  color: #fff;
   position: relative;
   top: -23px;
   left: 190px;
@@ -557,7 +555,7 @@ ul.social {
     display: -webkit-inline-box;
     contain: content;
     height: 26px;
-    color: blue;
+    color: #fff;
     overflow: hidden;
     font-size: 20px;
     padding-left: 10px
@@ -590,21 +588,21 @@ ul.social {
   }*/
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
-    top: 978px;
-    left: 468px;
+    /*top: 978px;
+    left: 468px;*/
   }
   .dropdown-menu {
     position: relative;
-    top: 35px;
+    top: 25px;
     left: 0;
   }
   .dropdown-category {
     position: absolute;
-    top: 120px;
-    width: 75%;
-    left: 21px;
+    top: 51px;
+    width: 80%;
+    left: 200px;
   }
   .latest {
     color: #000;
@@ -619,27 +617,27 @@ ul.social {
     margin: 0;
     color: #000;
     position: absolute;
-    top: 1000px;
+    top: 18px;
     font-size: 22px;
-    left: 468px;
+    /*left: 468px;*/
   }
   .dropdown-menu2 {
     display: block;
     width: 80%;
     position: relative;
-    top: -920px;
-    left: -275px;
+    top: 10px;
+    left: 150px;
     border: 2px solid grey;
     height: 37px;
-    padding-left: 4px;
-    padding-top: 7px;
+    /*padding-left: 4px;
+    padding-top: 7px;*/
   }
   .dropdown-category2 {
     display: block;
     width: 83%;
     position: relative;
-    top: -957px;
-    left: -52px;
+    top: -27px;
+    left: 370px;
     border: 2px solid grey;
     height: 37px;
     padding-left: 4px;
@@ -728,8 +726,7 @@ ul.social {
 }
 
 @media all and (max-width:1023px)and (min-width:921px) {
-
-/*@media (min-width: 1281px) {*/
+  /*@media (min-width: 1281px) {*/
   /*//CSS*/
   /********************************** Nav ********************************************************************************/
   main {
@@ -742,7 +739,7 @@ ul.social {
     display: -webkit-inline-box;
     contain: content;
     height: 26px;
-    color: blue;
+    color: #fff;
     overflow: hidden;
     font-size: 20px;
     padding-left: 10px
@@ -785,18 +782,15 @@ ul.social {
   .dropdown {
     position: relative;
     display: inline-block;
-    top: 917px;
-    left: 468px;
   }
   .dropdown-menu {
     position: relative;
     top: 35px;
-    left: 200px;
   }
   .dropdown-category {
     position: absolute;
-    top: 120px;
-    width: 75%;
+    top: 61px;
+    width: 80%;
     left: 220px;
   }
   .dropdown-menu2 {
@@ -825,9 +819,8 @@ ul.social {
     margin: 0;
     color: #000;
     position: absolute;
-    top: 945px;
+    top: 15px;
     font-size: 22px;
-    left: 650px;
   }
   .story2 {
     width: 20%;
@@ -919,11 +912,12 @@ ul.social {
   }
 }
 
+
 /************************************************************************************************************************
                                         Media Queries - Desktop
 ************************************************************************************************************************/
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+@media only screen and (min-device-width: 1024px) {
   /********************************** Nav ********************************************************************************/
   main {
     overflow-x: hidden;
@@ -938,7 +932,7 @@ ul.social {
     display: -webkit-inline-box;
     contain: content;
     height: 26px;
-    color: blue;
+    color: #fff;
     overflow: hidden;
     font-size: 20px;
     padding-left: 10px
@@ -977,13 +971,13 @@ ul.social {
   }
   .dropdown-menu {
     position: relative;
-    top: 940px;
-    left: 440px;
+    top: -12px;
+    left: -352px;
   }
   .dropdown-category {
     position: absolute;
-    top: 1020px;
-    left: 461px;
+    top: 15px;
+    left: -135px;
     width: 76%;
   }
   .text {
@@ -991,8 +985,8 @@ ul.social {
     color: #000;
     font-size: 24px;
     position: absolute;
-    top: 957px;
-    left: 775px;
+    top: 15px;
+    left: 5px;
   }
   .story2 {
     width: 100%;
@@ -1052,19 +1046,19 @@ ul.social {
     border: 2px solid grey;
     height: 37px;
     position: relative;
-    top: -20px;
+    top: -30px;
+    left: -140px;
     padding-left: 4px;
-    padding-top: 7px;
   }
   .dropdown-category2 {
     display: block;
     width: 100%;
-    margin-left: 60px;
-    margin-top: -33px;
+    position: absolute;
+    top: 0;
+    left: 140px;
     border: 2px solid grey;
     height: 37px;
     padding-left: 4px;
-    padding-top: 7px;
   }
   /************************** trending-now **************************************/
   .latest {
@@ -1082,7 +1076,7 @@ ul.social {
     position: absolute;
     padding: 4px;
     top: 193px;
-left: 671px;
+    left: 671px;
     font-family: 'Muli', sans-serif;
   }
   .trending-header {
