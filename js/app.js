@@ -21,6 +21,7 @@ $(document).ready(function () {
         $(".latest").append(story3Img);
 
         $(".latest").append(story4Img);
+        console.log("hello");
         var breakingNewsLink = "";
         data.articles.forEach(function (ele) {
             // Top section of page for breaking news

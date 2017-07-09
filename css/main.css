@@ -2,9 +2,8 @@
 
 
 /* Font Families Used
-H1 H2 H3 H4 = 'Muli', sans-serif;
-Body & Pararaph = 'Mogra', cursive;
-'Karla', sans-serif;
+H1 H2 H3 H4 = 'Raleway', sans-serif;
+Body & Pararaph = 'Open Sans', Sans-Serif;
 */
 
 
@@ -56,6 +55,7 @@ nav {
   border-bottom: 2px solid #000;
   display: -webkit-inline-box;
   contain: content;
+  font-family: 'Open Sans', sans-serif;
   height: 26px;
   color: #fff;
   overflow: hidden;
@@ -74,7 +74,7 @@ span {
 }
 
 .main-title {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-bottom: 2px solid black;
   text-align: left;
   color: #fff;
@@ -138,7 +138,9 @@ img.img-stories {
 }
 
 .headlines-title {
-  font-size: 1rem;
+  background-color: #f53d3d;
+  font-size: 1.4rem;
+  color: #fff;
   padding: 5px;
 }
 
@@ -152,7 +154,7 @@ img.img-stories {
 .dropdown-menu {
   display: block;
   width: 50%;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 30px;
   border: 2px solid grey;
   height: 37px;
@@ -166,17 +168,17 @@ img.img-stories {
   margin: 0;
   color: #000;
   position: absolute;
-  top: 115px;
+  top: 120px;
   left: 0px;
 }
 
 .dropdown-category {
   position: absolute;
   top: 26px;
-  left: 185px;
+  left: 178px;
   border: 2px solid grey;
   height: 37px;
-  width: 155px;
+  width: 150px;
   padding-left: 4px;
   margin-top: 4px;
 }
@@ -186,8 +188,8 @@ img.img-stories {
 
 .latest {
   color: #000;
-  font-family: 'Muli', sans-serif;
-  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin-left: 6px;
   margin-top: 50px;
@@ -202,9 +204,10 @@ img.img-stories {
   max-width: 50%;
 }*/
 
-.story-title {
+
+/*.story-title {
   font-size: 18px;
-}
+}*/
 
 .story {
   width: 100%;
@@ -216,8 +219,8 @@ img.img-stories {
 }
 
 .description {
-  font-family: 'Karla', sans-serif;
-  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
   width: 100%;
   padding-top: 5px;
   padding-right: 5px;
@@ -229,7 +232,7 @@ img.img-stories {
 }
 
 .description2 {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   width: 100%;
   padding-top: 5px;
@@ -249,7 +252,7 @@ img.img-stories {
 
 .description3 {
   width: 100%;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   padding-top: 5px;
   padding-right: 7px;
@@ -268,7 +271,7 @@ img.img-stories {
 
 .description4 {
   width: 100%;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   padding-top: 5px;
   padding-right: 20px;
@@ -288,7 +291,7 @@ img.img-stories {
   margin-top: 30px;
   max-width: 91%;
   margin-left: 23px;
-  background-color: #ecf0f1;
+  background-color: #f53d3d;
 }
 
 .hide {
@@ -353,8 +356,8 @@ img.img-stories {
 .dropdown-category2 {
   position: absolute;
   top: 42px;
-  left: 195px;
-  width: 86%;
+  left: 172px;
+  width: 80%;
   border: 2px solid grey;
   height: 37px;
   padding-left: 4px;
@@ -381,9 +384,20 @@ ul.social {
 .home {
   color: #fff;
   position: relative;
-  top: -23px;
+  top: -27px;
   left: 190px;
+  font-size: 1.2rem;
 }
+
+
+/*.marquee {
+    width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 50s linear infinite;
+}*/
 
 
 /************************************************************************************************************************
@@ -496,6 +510,9 @@ ul.social {
   .headlines {
     margin-top: 60px;
   }
+  .headlines-title {
+    font-size: 1.8rem;
+  }
   .dropdown-menu2 {
     display: block;
     width: 80%;
@@ -606,8 +623,8 @@ ul.social {
   }
   .latest {
     color: #000;
-    font-family: 'Muli', sans-serif;
-    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
     line-height: 1.5;
     margin-left: 6px;
     margin-top: 0px;
@@ -651,7 +668,7 @@ ul.social {
     margin-top: 33px;
   }
   .description2 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: absolute;
     top: 747px;
@@ -666,14 +683,14 @@ ul.social {
   }
   .description3 {
     width: 15%;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: relative;
     left: 440px;
   }
   .description4 {
     width: 11%;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: absolute;
     top: 990px;
@@ -694,6 +711,9 @@ ul.social {
     margin-right: auto;
     background-color: #f53d3d;
   }
+  .headlines-title {
+    font-size: 1.8rem;
+  }
   /************************** trending-now **************************************/
   .trending-now {
     display: block;
@@ -701,13 +721,14 @@ ul.social {
     position: absolute;
     padding: 4px;
     top: 150px;
-    left: 450px;
-    font-family: 'Muli', sans-serif;
+    left: 480px;
+    font-family: 'Open Sans', sans-serif;
   }
   .trending-header {
     color: #000;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
+    font-weight: bolder;
   }
   .trending-articles {
     margin-top: 7px;
@@ -748,6 +769,7 @@ ul.social {
     display: inline-block;
     margin: 5px;
     float: right;
+    font-size: 18px;
     position: relative;
     top: -30px;
     left: 0;
@@ -765,6 +787,14 @@ ul.social {
   }
   .social a {
     color: #fff;
+  }
+  .main-title {
+    height: 86px;
+    font-size: 0.9rem;
+  }
+  span {
+    font-size: 2rem;
+    line-height: 1.50em;
   }
   /************************** Categories Drop Down ******************************/
   .categories {
@@ -797,23 +827,21 @@ ul.social {
     display: block;
     width: 80%;
     position: relative;
-    top: -920px;
-    left: -275px;
+    top: 0;
+    left: 240px;
     border: 2px solid grey;
     height: 37px;
     padding-left: 4px;
-    padding-top: 7px;
   }
   .dropdown-category2 {
     display: block;
     width: 83%;
     position: relative;
-    top: -957px;
-    left: -52px;
+    top: -37px;
+    left: 480px;
     border: 2px solid grey;
     height: 37px;
     padding-left: 4px;
-    padding-top: 7px;
   }
   .text {
     margin: 0;
@@ -830,7 +858,7 @@ ul.social {
     margin-top: 33px;
   }
   .description2 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: absolute;
     top: 747px;
@@ -845,14 +873,14 @@ ul.social {
   }
   .description3 {
     width: 15%;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: relative;
     left: 440px;
   }
   .description4 {
     width: 11%;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: absolute;
     top: 990px;
@@ -868,14 +896,18 @@ ul.social {
   .headlines {
     border: 2px solid black;
     max-width: 65%;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     background-color: #f53d3d;
   }
+  .headlines-title {
+    font-size: 2rem;
+  }
   /************************** trending-now **************************************/
   .latest {
     color: #000;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     margin-left: 6px;
@@ -889,11 +921,11 @@ ul.social {
     padding: 4px;
     top: 150px;
     left: 628px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
   .trending-header {
     color: #000;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
   }
   .trending-articles {
@@ -917,7 +949,397 @@ ul.social {
                                         Media Queries - Desktop
 ************************************************************************************************************************/
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (max-width:1200px)and (min-device-width: 1024px) {
+  /********************************** Nav ********************************************************************************/
+  main {
+    overflow-x: hidden;
+  }
+  ul.social {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    background: #888383;
+    border-bottom: 2px solid #000;
+    display: -webkit-inline-box;
+    contain: content;
+    height: 26px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 20px;
+    padding-left: 10px
+  }
+  .social {
+    display: block;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    left: -8px;
+    top: -25px;
+  }
+  .social li {
+    display: inline;
+    margin-left: 8px;
+  }
+  .social a {
+    color: #fff;
+  }
+  .main-title {
+    height: 86px;
+    font-size: 0.9rem;
+  }
+  span {
+    font-size: 2rem;
+    line-height: 1.50em;
+  }
+  /************************** Categories Drop Down ******************************/
+  .categories {
+    position: relative;
+    top: 0px;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 34px;
+    left: 360px;
+  }
+  .dropdown-menu {
+    position: relative;
+    top: -12px;
+    left: -352px;
+  }
+  .dropdown-category {
+    position: absolute;
+    top: 15px;
+    left: -135px;
+    width: 80%;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+  }
+  .story2 {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    left: 0px;
+    margin-top: 33px;
+  }
+  .description2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 747px;
+    width: 12%;
+  }
+  .story3 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    left: 433px;
+    top: 751px;
+  }
+  .description3 {
+    width: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 440px;
+  }
+  .description4 {
+    width: 11%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 990px;
+    left: 295px;
+  }
+  .story4 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    top: 981px;
+  }
+  /************************** Headlines ***************************************/
+  .headlines {
+    border: 2px solid black;
+    margin-top: 30px;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f53d3d;
+  }
+  .headlines-title {
+    font-size: 2rem;
+  }
+  .dropdown-menu2 {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid grey;
+    height: 37px;
+    position: relative;
+    top: -30px;
+    left: -65px;
+    padding-left: 4px;
+  }
+  .dropdown-category2 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    border: 2px solid grey;
+    height: 37px;
+    padding-left: 4px;
+  }
+  /************************** trending-now **************************************/
+  .latest {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 6px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+  }
+  .trending-now {
+    display: block;
+    width: 40%;
+    position: absolute;
+    padding: 4px;
+    top: 193px;
+    left: 638px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .trending-header {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  }
+  .trending-articles {
+    margin-top: 7px;
+    border-bottom: 2px solid gray;
+    font-size: 14px;
+  }
+  .trending-articles a {
+    color: #000;
+  }
+  .hide {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+}
+
+@media all and (max-width:1300px)and (min-width: 1201px) {
+  /********************************** Nav ********************************************************************************/
+  main {
+    overflow-x: hidden;
+  }
+  ul.social {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    background: #888383;
+    border-bottom: 2px solid #000;
+    display: -webkit-inline-box;
+    contain: content;
+    height: 26px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 20px;
+    padding-left: 10px
+  }
+  .social {
+    display: block;
+    float: right;
+    position: relative;
+    font-size: 22px;
+    left: -8px;
+    top: -28px;
+  }
+  .social li {
+    display: inline;
+    margin-left: 8px;
+  }
+  .social a {
+    color: #fff;
+  }
+  .main-title {
+    height: 86px;
+    font-size: 1rem;
+  }
+  span {
+    font-size: 2.4rem;
+    line-height: 1.3em;
+  }
+  /************************** Categories Drop Down ******************************/
+  .categories {
+    position: relative;
+    top: 0px;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 34px;
+    left: 360px;
+  }
+  .dropdown-menu {
+    position: relative;
+    top: -12px;
+    left: -352px;
+  }
+  .dropdown-category {
+    position: absolute;
+    top: 15px;
+    left: -135px;
+    width: 80%;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+  }
+  .story2 {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    left: 0px;
+    margin-top: 33px;
+  }
+  .description2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 747px;
+    width: 12%;
+  }
+  .story3 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    left: 433px;
+    top: 751px;
+  }
+  .description3 {
+    width: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 440px;
+  }
+  .description4 {
+    width: 11%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 990px;
+    left: 295px;
+  }
+  .story4 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    top: 981px;
+  }
+  /************************** Headlines ***************************************/
+  .headlines {
+    border: 2px solid black;
+    margin-top: 30px;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f53d3d;
+  }
+  .headlines-title {
+    font-size: 2rem;
+  }
+  .dropdown-menu2 {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid grey;
+    height: 37px;
+    position: relative;
+    top: -30px;
+    left: 0;
+    padding-left: 4px;
+  }
+  .dropdown-category2 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    border: 2px solid grey;
+    height: 37px;
+    padding-left: 4px;
+  }
+  /************************** trending-now **************************************/
+  .latest {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 6px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+  }
+  .trending-now {
+    display: block;
+    width: 40%;
+    position: absolute;
+    padding: 4px;
+    top: 193px;
+    left: 715px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .trending-header {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  }
+  .trending-articles {
+    margin-top: 7px;
+    border-bottom: 2px solid gray;
+    font-size: 14px;
+  }
+  .trending-articles a {
+    color: #000;
+  }
+  .hide {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+}
+
+@media all and (max-width:1400px)and (min-width: 1301px) {
   /********************************** Nav ********************************************************************************/
   main {
     overflow-x: hidden;
@@ -978,7 +1400,7 @@ ul.social {
     position: absolute;
     top: 15px;
     left: -135px;
-    width: 76%;
+    width: 80%;
   }
   .text {
     margin: 0;
@@ -996,7 +1418,7 @@ ul.social {
     margin-top: 33px;
   }
   .description2 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: absolute;
     top: 747px;
@@ -1011,14 +1433,14 @@ ul.social {
   }
   .description3 {
     width: 15%;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: relative;
     left: 440px;
   }
   .description4 {
     width: 11%;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: absolute;
     top: 990px;
@@ -1039,6 +1461,9 @@ ul.social {
     margin-right: auto;
     background-color: #f53d3d;
   }
+  .headlines-title {
+    font-size: 2rem;
+  }
   .dropdown-menu2 {
     display: block;
     width: 100%;
@@ -1047,7 +1472,7 @@ ul.social {
     height: 37px;
     position: relative;
     top: -30px;
-    left: -140px;
+    left: 0;
     padding-left: 4px;
   }
   .dropdown-category2 {
@@ -1055,7 +1480,7 @@ ul.social {
     width: 100%;
     position: absolute;
     top: 0;
-    left: 140px;
+    left: 250px;
     border: 2px solid grey;
     height: 37px;
     padding-left: 4px;
@@ -1063,7 +1488,7 @@ ul.social {
   /************************** trending-now **************************************/
   .latest {
     color: #000;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     margin-left: 6px;
@@ -1076,12 +1501,12 @@ ul.social {
     position: absolute;
     padding: 4px;
     top: 193px;
-    left: 671px;
-    font-family: 'Muli', sans-serif;
+    left: 780px;
+    font-family: 'Open Sans', sans-serif;
   }
   .trending-header {
     color: #000;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
   }
   .trending-articles {
@@ -1098,4 +1523,1127 @@ ul.social {
   .home {
     display: none;
   }
+}
+
+@media all and (max-width:1500px)and (min-width: 1401px) {
+  /********************************** Nav ********************************************************************************/
+  main {
+    overflow-x: hidden;
+  }
+  ul.social {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    background: #888383;
+    border-bottom: 2px solid #000;
+    display: -webkit-inline-box;
+    contain: content;
+    height: 26px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 20px;
+    padding-left: 10px
+  }
+  .social {
+    display: block;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    left: -8px;
+    top: -24px;
+  }
+  .social li {
+    display: inline;
+    margin-left: 8px;
+  }
+  .social a {
+    color: #fff;
+  }
+  /************************** Categories Drop Down ******************************/
+  .categories {
+    position: relative;
+    top: 0px;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 34px;
+    left: 360px;
+  }
+  .dropdown-menu {
+    position: relative;
+    top: -12px;
+    left: -352px;
+  }
+  .dropdown-category {
+    position: absolute;
+    top: 15px;
+    left: -135px;
+    width: 80%;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+  }
+  .story2 {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    left: 0px;
+    margin-top: 33px;
+  }
+  .description2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 747px;
+    width: 12%;
+  }
+  .story3 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    left: 433px;
+    top: 751px;
+  }
+  .description3 {
+    width: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 440px;
+  }
+  .description4 {
+    width: 11%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 990px;
+    left: 295px;
+  }
+  .story4 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    top: 981px;
+  }
+  /************************** Headlines ***************************************/
+  .headlines {
+    border: 2px solid black;
+    margin-top: 30px;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f53d3d;
+  }
+  .headlines-title {
+    font-size: 2.4rem;
+  }
+  .dropdown-menu2 {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid grey;
+    height: 37px;
+    position: relative;
+    top: -30px;
+    left: 140px;
+    padding-left: 4px;
+  }
+  .dropdown-category2 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    border: 2px solid grey;
+    height: 37px;
+    padding-left: 4px;
+  }
+  /************************** trending-now **************************************/
+  .latest {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 6px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+  }
+  .trending-now {
+    display: block;
+    width: 40%;
+    position: absolute;
+    padding: 4px;
+    top: 193px;
+    left: 780px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .trending-header {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  }
+  .trending-articles {
+    margin-top: 7px;
+    border-bottom: 2px solid gray;
+    font-size: 14px;
+  }
+  .trending-articles a {
+    color: #000;
+  }
+  .hide {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+}
+@media all and (max-width:1700px)and (min-width: 1501px) {
+  /********************************** Nav ********************************************************************************/
+  main {
+    overflow-x: hidden;
+  }
+  ul.social {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    background: #888383;
+    border-bottom: 2px solid #000;
+    display: -webkit-inline-box;
+    contain: content;
+    height: 26px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 20px;
+    padding-left: 10px
+  }
+  .social {
+    display: block;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    left: -8px;
+    top: -24px;
+  }
+  .social li {
+    display: inline;
+    margin-left: 8px;
+  }
+  .social a {
+    color: #fff;
+  }
+  /************************** Categories Drop Down ******************************/
+  .categories {
+    position: relative;
+    top: 0px;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 34px;
+    left: 360px;
+  }
+  .dropdown-menu {
+    position: relative;
+    top: -12px;
+    left: -352px;
+  }
+  .dropdown-category {
+    position: absolute;
+    top: 15px;
+    left: -135px;
+    width: 80%;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+  }
+  .story2 {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    left: 0px;
+    margin-top: 33px;
+  }
+  .description2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 747px;
+    width: 12%;
+  }
+  .story3 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    left: 433px;
+    top: 751px;
+  }
+  .description3 {
+    width: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 440px;
+  }
+  .description4 {
+    width: 11%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 990px;
+    left: 295px;
+  }
+  .story4 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    top: 981px;
+  }
+  /************************** Headlines ***************************************/
+  .headlines {
+    border: 2px solid black;
+    margin-top: 30px;
+    max-width: 65%;
+    font-size: 2.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f53d3d;
+  }
+  .headlines-title {
+    font-size: 2.4rem;
+  }
+  .dropdown-menu2 {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid grey;
+    height: 37px;
+    position: relative;
+    top: -30px;
+    left: 115px;
+    padding-left: 4px;
+  }
+  .dropdown-category2 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    border: 2px solid grey;
+    height: 37px;
+    padding-left: 4px;
+  }
+  /************************** trending-now **************************************/
+  .latest {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 6px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+  }
+  .trending-now {
+    display: block;
+    width: 40%;
+    position: absolute;
+    padding: 4px;
+    top: 193px;
+    left: 905px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .trending-header {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  }
+  .trending-articles {
+    margin-top: 7px;
+    border-bottom: 2px solid gray;
+    font-size: 14px;
+  }
+  .trending-articles a {
+    color: #000;
+  }
+  .hide {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+}
+@media all and (max-width:2000px)and (min-width: 1701px) {
+  /********************************** Nav ********************************************************************************/
+  main {
+    overflow-x: hidden;
+  }
+  ul.social {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    background: #888383;
+    border-bottom: 2px solid #000;
+    display: -webkit-inline-box;
+    contain: content;
+    height: 26px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 20px;
+    padding-left: 10px
+  }
+  .social {
+    display: block;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    left: -8px;
+    top: -24px;
+  }
+  .social li {
+    display: inline;
+    margin-left: 8px;
+  }
+  .social a {
+    color: #fff;
+  }
+  /************************** Categories Drop Down ******************************/
+  .categories {
+    position: relative;
+    top: 0px;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 34px;
+    left: 360px;
+  }
+  .dropdown-menu {
+    position: relative;
+    top: -12px;
+    left: -352px;
+  }
+  .dropdown-category {
+    position: absolute;
+    top: 15px;
+    left: -135px;
+    width: 80%;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+  }
+  .story2 {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    left: 0px;
+    margin-top: 33px;
+  }
+  .description2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 747px;
+    width: 12%;
+  }
+  .story3 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    left: 433px;
+    top: 751px;
+  }
+  .description3 {
+    width: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 440px;
+  }
+  .description4 {
+    width: 11%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 990px;
+    left: 295px;
+  }
+  .story4 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    top: 981px;
+  }
+  /************************** Headlines ***************************************/
+  .headlines {
+    border: 2px solid black;
+    font-size: 2.8rem;
+    margin-top: 30px;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f53d3d;
+  }
+  .headlines-title {
+    font-size: 2.6rem;
+  }
+  .dropdown-menu2 {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid grey;
+    height: 37px;
+    position: relative;
+    top: -30px;
+    left: 250px;
+    padding-left: 4px;
+  }
+  .dropdown-category2 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 550px;
+    border: 2px solid grey;
+    height: 37px;
+    padding-left: 4px;
+  }
+  /************************** trending-now **************************************/
+  .latest {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 6px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+  }
+  .trending-now {
+    display: block;
+    width: 40%;
+    position: absolute;
+    padding: 4px;
+    top: 193px;
+    left: 1035px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .trending-header {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  }
+  .trending-articles {
+    margin-top: 7px;
+    border-bottom: 2px solid gray;
+    font-size: 14px;
+  }
+  .trending-articles a {
+    color: #000;
+  }
+  .hide {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+}
+@media all and (max-width:2300px)and (min-width: 2001px) {
+  /********************************** Nav ********************************************************************************/
+  main {
+    overflow-x: hidden;
+  }
+  ul.social {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    background: #888383;
+    border-bottom: 2px solid #000;
+    display: -webkit-inline-box;
+    contain: content;
+    height: 26px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 20px;
+    padding-left: 10px
+  }
+  .social {
+    display: block;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    left: -8px;
+    top: -24px;
+  }
+  .social li {
+    display: inline;
+    margin-left: 8px;
+  }
+  .social a {
+    color: #fff;
+  }
+  /************************** Categories Drop Down ******************************/
+  .categories {
+    position: relative;
+    top: 0px;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 34px;
+    left: 360px;
+  }
+  .dropdown-menu {
+    position: relative;
+    top: -12px;
+    left: -352px;
+  }
+  .dropdown-category {
+    position: absolute;
+    top: 15px;
+    left: -135px;
+    width: 80%;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+  }
+  .story2 {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    left: 0px;
+    margin-top: 33px;
+  }
+  .description2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 747px;
+    width: 12%;
+  }
+  .story3 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    left: 433px;
+    top: 751px;
+  }
+  .description3 {
+    width: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 440px;
+  }
+  .description4 {
+    width: 11%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 990px;
+    left: 295px;
+  }
+  .story4 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    top: 981px;
+  }
+  /************************** Headlines ***************************************/
+  .headlines {
+    border: 2px solid black;
+    font-size: 2.8rem;
+    margin-top: 30px;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f53d3d;
+  }
+  .headlines-title {
+    font-size: 2.8rem;
+  }
+  .dropdown-menu2 {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid grey;
+    height: 37px;
+    position: relative;
+    top: -30px;
+    left: 300px;
+    padding-left: 4px;
+  }
+  .dropdown-category2 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 600px;
+    border: 2px solid grey;
+    height: 37px;
+    padding-left: 4px;
+  }
+  /************************** trending-now **************************************/
+  .latest {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 6px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+  }
+  .trending-now {
+    display: block;
+    width: 36%;
+    position: absolute;
+    padding: 4px;
+    top: 193px;
+    left: 1300px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .trending-header {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  }
+  .trending-articles {
+    margin-top: 7px;
+    border-bottom: 2px solid gray;
+    font-size: 14px;
+  }
+  .trending-articles a {
+    color: #000;
+  }
+  .hide {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+}
+@media all and (max-width:2500px)and (min-width: 2301px) {
+  /********************************** Nav ********************************************************************************/
+  main {
+    overflow-x: hidden;
+  }
+  ul.social {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    background: #888383;
+    border-bottom: 2px solid #000;
+    display: -webkit-inline-box;
+    contain: content;
+    height: 26px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 20px;
+    padding-left: 10px
+  }
+  .social {
+    display: block;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    left: -8px;
+    top: -24px;
+  }
+  .social li {
+    display: inline;
+    margin-left: 8px;
+  }
+  .social a {
+    color: #fff;
+  }
+  /************************** Categories Drop Down ******************************/
+  .categories {
+    position: relative;
+    top: 0px;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 34px;
+    left: 360px;
+  }
+  .dropdown-menu {
+    position: relative;
+    top: -12px;
+    left: -352px;
+  }
+  .dropdown-category {
+    position: absolute;
+    top: 15px;
+    left: -135px;
+    width: 80%;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+  }
+  .story2 {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    left: 0px;
+    margin-top: 33px;
+  }
+  .description2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 747px;
+    width: 12%;
+  }
+  .story3 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    left: 433px;
+    top: 751px;
+  }
+  .description3 {
+    width: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 440px;
+  }
+  .description4 {
+    width: 11%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 990px;
+    left: 295px;
+  }
+  .story4 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    top: 981px;
+  }
+  /************************** Headlines ***************************************/
+  .headlines {
+    border: 2px solid black;
+    font-size: 2.8rem;
+    margin-top: 30px;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f53d3d;
+  }
+  .headlines-title {
+    font-size: 3.2rem;
+  }
+  .dropdown-menu2 {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid grey;
+    height: 37px;
+    position: relative;
+    top: -30px;
+    left: 500px;
+    padding-left: 4px;
+  }
+  .dropdown-category2 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 800px;
+    border: 2px solid grey;
+    height: 37px;
+    padding-left: 4px;
+  }
+  /************************** trending-now **************************************/
+  .latest {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 6px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+  }
+  .trending-now {
+    display: block;
+    width: 32%;
+    position: absolute;
+    padding: 4px;
+    top: 193px;
+    left: 1580px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .trending-header {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  }
+  .trending-articles {
+    margin-top: 7px;
+    border-bottom: 2px solid gray;
+    font-size: 14px;
+  }
+  .trending-articles a {
+    color: #000;
+  }
+  .hide {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+}
+@media all and (max-width:2700px)and (min-width: 2501px) {
+  /********************************** Nav ********************************************************************************/
+  main {
+    overflow-x: hidden;
+  }
+  ul.social {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    background: #888383;
+    border-bottom: 2px solid #000;
+    display: -webkit-inline-box;
+    contain: content;
+    height: 26px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 20px;
+    padding-left: 10px
+  }
+  .social {
+    display: block;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    left: -8px;
+    top: -24px;
+  }
+  .social li {
+    display: inline;
+    margin-left: 8px;
+  }
+  .social a {
+    color: #fff;
+  }
+  /************************** Categories Drop Down ******************************/
+  .categories {
+    position: relative;
+    top: 0px;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 34px;
+    left: 360px;
+  }
+  .dropdown-menu {
+    position: relative;
+    top: -12px;
+    left: -352px;
+  }
+  .dropdown-category {
+    position: absolute;
+    top: 15px;
+    left: -135px;
+    width: 80%;
+  }
+  .text {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+  }
+  .story2 {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    left: 0px;
+    margin-top: 33px;
+  }
+  .description2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 747px;
+    width: 12%;
+  }
+  .story3 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    left: 433px;
+    top: 751px;
+  }
+  .description3 {
+    width: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 440px;
+  }
+  .description4 {
+    width: 11%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 990px;
+    left: 295px;
+  }
+  .story4 {
+    width: 20%;
+    height: 230px;
+    position: absolute;
+    top: 981px;
+  }
+  /************************** Headlines ***************************************/
+  .headlines {
+    border: 2px solid black;
+    font-size: 2.8rem;
+    margin-top: 30px;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f53d3d;
+  }
+  .headlines-title {
+    font-size: 3.4rem;
+  }
+  .dropdown-menu2 {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid grey;
+    height: 37px;
+    position: relative;
+    top: -30px;
+    left: 500px;
+    padding-left: 4px;
+  }
+  .dropdown-category2 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 800px;
+    border: 2px solid grey;
+    height: 37px;
+    padding-left: 4px;
+  }
+  /************************** trending-now **************************************/
+  .latest {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 6px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+  }
+  .trending-now {
+    display: block;
+    width: 32%;
+    position: absolute;
+    padding: 4px;
+    top: 193px;
+    left: 1580px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .trending-header {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  }
+  .trending-articles {
+    margin-top: 7px;
+    border-bottom: 2px solid gray;
+    font-size: 14px;
+  }
+  .trending-articles a {
+    color: #000;
+  }
+  .hide {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+}
 }
