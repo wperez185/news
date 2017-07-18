@@ -4,16 +4,16 @@ $(document).ready(function () {
     var breakingNews = "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
     $.getJSON(breakingNews, function (data) {
         var story1ImgUrl = data.articles[0].url;
-        var story1Img = "<section class='story-img col-md-6'>" + "<section class='story-title'>" + data.articles[0].title + "</section>" + "<a href='" + data.articles[0].url + "' target='_blank'>" + "<img src='" + data.articles[0].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[0].description + "</section>" + "</section>" + "<hr />";
+        var story1Img = "<section class='story-img'>" + "<section class='story-title'>" + data.articles[0].title + "</section>" + "<a href='" + data.articles[0].url + "' target='_blank'>" + "<img src='" + data.articles[0].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[0].description + "</section>" + "</section>" + "<hr />";
         // Second story
         var story2ImgUrl = data.articles[4].url;
-        var story2Img = "<section class='story-img col-md-6'>" + "<section class='story-title'>" + data.articles[4].title + "</section>" + "<a href='" + data.articles[4].url + "' target='_blank'>" + "<img src='" + data.articles[4].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[4].description + "</section>" + "</section>" + "<hr />";
+        var story2Img = "<section class='story-img'>" + "<section class='story-title'>" + data.articles[4].title + "</section>" + "<a href='" + data.articles[4].url + "' target='_blank'>" + "<img src='" + data.articles[4].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[4].description + "</section>" + "</section>" + "<hr />";
         // Third story
         var story3ImgUrl = data.articles[6].url;
-        var story3Img = "<section class='story-img col-md-6'>" + "<section class='story-title'>" + data.articles[6].title + "</section>" + "<a href='" + data.articles[6].url + "' target='_blank'>" + "<img src='" + data.articles[6].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[6].description + "</section>" + "</section>" + "<hr />";
+        var story3Img = "<section class='story-img'>" + "<section class='story-title'>" + data.articles[6].title + "</section>" + "<a href='" + data.articles[6].url + "' target='_blank'>" + "<img src='" + data.articles[6].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[6].description + "</section>" + "</section>" + "<hr />";
         // Fourth story
         var story4ImgUrl = data.articles[3].url;
-        var story4Img = "<section class='story-img col-md-6'>" + "<section class='story-title'>" + data.articles[3].title + "</section>" + "<a href='" + data.articles[3].url + "' target='_blank'>" + "<img src='" + data.articles[3].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[3].description + "</section>" + "</section>" + "<hr />";
+        var story4Img = "<section class='story-img'>" + "<section class='story-title'>" + data.articles[3].title + "</section>" + "<a href='" + data.articles[3].url + "' target='_blank'>" + "<img src='" + data.articles[3].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[3].description + "</section>" + "</section>" + "<hr />";
         $(".latest").append(story1Img);
 
         $(".latest").append(story2Img);
@@ -21,13 +21,13 @@ $(document).ready(function () {
         $(".latest").append(story3Img);
 
         $(".latest").append(story4Img);
+        console.log("hello");
         var breakingNewsLink = "";
         data.articles.forEach(function (ele) {
             // Top section of page for breaking news
-            breakingNewsLink += "<section class='breaking-news animated slideOutLef infinite' style='width:100%'><marquee>BREAKING NEWS: " + ele.title + "</marquee></section>";
-
+            breakingNewsLink += "<section class='breaking-news'>BREAKING NEWS: " + ele.title + "</section>";
         });
-        $("nav").append(breakingNewsLink);
+        $(".feed").append(breakingNewsLink);
     });
     $(".breaking-news").addClass("animated slideOutLeft");
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
             var trendingUl = "<section class='trending-articles'>" + "<a href=' " + ele.url + "' target='_blank'>" + ele.title + "<hr>" + "</section>";
             // console.log(ele.description);
             $(".trending-now").append(trendingUl);
-        })
+        });
 
     });
 
