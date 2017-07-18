@@ -34,7 +34,7 @@ $(document).ready(function () {
     var trendingNow = "https://newsapi.org/v1/articles?source=newsweek&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
     $.getJSON(trendingNow, function (data) {
         data.articles.forEach(function (ele) {
-            var trendingUl = "<section class='trending-articles'>" + "<a href=' " + ele.url + "' target='_blank'>" + ele.title + "<hr>" + "</section>";
+            var trendingUl = "<section class='trending-articles'>" + "<a href=' " + ele.url + "' target='_blank'>" + ele.title + "<hr class='trending'>" + "</section>";
             // console.log(ele.description);
             $(".trending-now").append(trendingUl);
         });

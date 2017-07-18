@@ -509,8 +509,11 @@ img.img-stories {
     margin: 0;
     font-weight: bolder;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
@@ -591,8 +594,11 @@ img.img-stories {
     font-family: 'Raleway', sans-serif;
     margin: 0;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
@@ -678,8 +684,11 @@ img.img-stories {
     font-family: 'Raleway', sans-serif;
     margin: 0;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
@@ -760,8 +769,11 @@ img.img-stories {
     font-family: 'Raleway', sans-serif;
     margin: 0;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
@@ -838,8 +850,11 @@ img.img-stories {
     font-family: 'Raleway', sans-serif;
     margin: 0;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
@@ -916,8 +931,11 @@ img.img-stories {
     font-family: 'Raleway', sans-serif;
     margin: 0;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
@@ -993,8 +1011,11 @@ img.img-stories {
     font-family: 'Raleway', sans-serif;
     margin: 0;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
@@ -1070,8 +1091,11 @@ img.img-stories {
     font-family: 'Raleway', sans-serif;
     margin: 0;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
@@ -1147,8 +1171,11 @@ img.img-stories {
     font-family: 'Raleway', sans-serif;
     margin: 0;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
@@ -1224,8 +1251,11 @@ img.img-stories {
     font-family: 'Raleway', sans-serif;
     margin: 0;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
@@ -1301,8 +1331,11 @@ img.img-stories {
     font-family: 'Raleway', sans-serif;
     margin: 0;
   }
+  .trending {
+    display: none;
+  }
   .trending-articles {
-    margin-top: 7px;
+    margin-top: 15px;
     border-bottom: 2px solid gray;
     font-size: 14px;
   }
